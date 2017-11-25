@@ -71,48 +71,46 @@ It`s transform data-attributes to Vue.js directives and components!
 
 ```js
 new VueW3CValid({
-	el: '.directivesValid'
+    el: '.directivesValid'
 });
 ```
 #### In DOM We get
 ```html
 <div class="directivesValid">
-	<input value="change" v-on:click.prevent="ordered = !ordered" type="button">
-	<ol v-if="ordered">
-		<li v-for="item in items">{{ item }}</li>
-	</ol>
-	<ul v-else="">
-		<li v-for="item in items">{{ item }}</li>
-	</ul>
-	<transition name="fade" mode="out-in">
-		<input v-bind:value="ordered" v-show="ordered" type="text">
-	</transition>
-	<some-div>
-		<p>Message</p>
-		<p slot="footer">Message</p>
-	</some-div>
+    <input value="change" v-on:click.prevent="ordered = !ordered" type="button">
+    <ol v-if="ordered">
+        <li v-for="item in items">{{ item }}</li>
+    </ol>
+    <ul v-else="">
+        <li v-for="item in items">{{ item }}</li>
+    </ul>
+    <transition name="fade" mode="out-in">
+        <input v-bind:value="ordered" v-show="ordered" type="text">
+    </transition>
+    <some-div>
+        <p>Message</p>
+        <p slot="footer">Message</p>
+    </some-div>
 </div>
 ```
 #### And Vue.js works good:
 ```js
 Vue.component('someDiv', {
-	template: `
-		<div class="some">
-			<hr>
-			<slot></slot>
-			<hr>
-			<slot name="footer"></slot>
-			<hr>
-		</div>
-	`
+    template: '<div class="some">\
+            <hr>\
+            <slot></slot>\
+            <hr>\
+            <slot name="footer"></slot>\
+            <hr>\
+    </div>'
 });
 
 new Vue({
-	el: '.directivesValid',
-	data: {
-		items: ['a', 'b', 'c'],
-		ordered: false
-	}
+    el: '.directivesValid',
+    data: {
+        items: ['a', 'b', 'c'],
+        ordered: false
+    }
 });
 ```
 
