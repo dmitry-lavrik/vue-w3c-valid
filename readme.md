@@ -11,8 +11,8 @@ import VueW3CValid from 'vue-w3c-valid';
 ```
 
 ### Simple
-```
-<script src="https:// ... "></script>
+```html
+<script src="https://unpkg.com/vue-w3c-valid/dist/simple.js"></script>
 ```
 ## Usage
 
@@ -29,23 +29,24 @@ It`s transform data-attributes to Vue.js directives and components!
 ### data-v to Vue.js directives
 | before  | after  |
 |---|---|
-| <input data-v-if="some">  |  <input v-if="some"> |
-| <input data-v-show="some">  |  <input v-show="some"> |
+| data-v-if="some" | v-if="some" |
+| data-v-show="some" | v-show="some" |
 
 ### data-v with _ to :
-
-| <input data-v-bind_value="some">  |  <input v-bind:value="some"> |
-| <button data-v-on_click="some">  |  <input v-on:click="some"> |
-
-### data-vue to simple attribytes
 | before  | after  |
 |---|---|
-| <div data-vue-slot="some">1</div>  | <div slot="some">1</div> |
+| data-v-bind_value="some"  |  v-bind:value="some" |
+| data-v-on_click="some"  |  v-on:click="some" |
+
+### data-vue to simple attributes
+| before  | after  |
+|---|---|
+| data-vue-slot="some" | slot="some" |
 
 ### data-vue-role to HTML tag
 | before  | after  |
 |---|---|
-| <div data-vue-role="transition">...</div>  | <transition>...</transition> |
+| &lt;div data-vue-role="transition"&gt;...&lt;/div&gt;  | &lt;transition&gt;...&lt;/transition&gt; |
 
 ### So, it sorks nice! As sample:
 ```html
@@ -115,4 +116,4 @@ new Vue({
 });
 ```
 
-#### You can find this sample on ...
+#### You can find this sample on https://jsfiddle.net/oe6ezzh2/
