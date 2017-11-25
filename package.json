@@ -1,7 +1,7 @@
 {
   "name": "vue-w3c-valid",
-  "version": "0.0.7",
-  "description": "Love Vue.js?  Love W3C validator too? Use vue-w3c-valid libruary!",
+  "version": "0.0.8",
+  "description": "Love Vue.js?  Love W3C validator too? Use vue-w3c-valid library!",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

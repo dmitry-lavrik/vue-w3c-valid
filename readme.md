@@ -1,4 +1,4 @@
-> Love Vue.js?  Love W3C validator too? Use vue-w3c-valid libruary!
+> Love Vue.js?  Love W3C validator too? Use vue-w3c-valid library!
 
 ## Install
 
