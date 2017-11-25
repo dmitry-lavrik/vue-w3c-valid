@@ -1,6 +1,4 @@
-"use strict";
-
-export default class VueW3CValid {
+class VueW3CValid {
 
     constructor(options) {
         let defaults = {
