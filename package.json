@@ -1,6 +1,6 @@
 {
   "name": "vue-w3c-valid",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Love Vue.js?  Love W3C validator too? Use vue-w3c-valid libruary!",
   "main": "index.js",
   "scripts": {
