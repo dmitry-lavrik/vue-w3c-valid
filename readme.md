@@ -48,7 +48,7 @@ It`s transform data-attributes to Vue.js directives and components!
 |---|---|
 | &lt;div data-vue-role="transition"&gt;...&lt;/div&gt;  | &lt;transition&gt;...&lt;/transition&gt; |
 
-### So, it sorks nice! As sample:
+### So, it works nice! As sample:
 ```html
 <div class="directivesValid">
     <input type="button" value="change" data-v-on_click.prevent="ordered = !ordered">
